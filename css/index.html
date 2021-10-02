@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StackPython</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-600"
+      style="font-family: 'Source Sans Pro', sans-serif">
+      <!-- NavBar -->
+    <class class="flex justify-between items-center py-4 bg-blue-900 ">
+        <div class="flex-shrink-0 ml-10 cursor-pointer">
+            <span class="ml-1 text-2xl text-blue-200 font-bold">Coding Advicer</span>
+        </div>
+        <nav>
+          <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+              <div class="flex space-x-7">
+                <!-- Primary Navbar items -->
+                <div class="hidden md:flex items-center space-x-1">
+                  <a href="index.html" class="py-4 px-2 text-white border-b-4 border-green-500 font-semibold ">Home</a>
+                  <a href="course.html" class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Course</a>
+                  <a href="" class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Services</a>
+                  <a href="" class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">About</a>
+                  <a href="" class="py-4 px-2 text-white font-semibold hover:text-green-500 transition duration-300">Contact Us</a>
+                </div>
+              </div>
+              <!-- Mobile menu button -->
+              <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button">
+                <svg class=" w-6 h-6 text-white hover:text-green-500 "
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+              </div>
+            </div>
+          </div>
+          <!-- mobile menu -->
+          <div class="hidden mobile-menu">
+            <ul class="">
+              <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-green-500 font-semibold">Home</a></li>
+              <li><a href="course.html" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Course</a></li>
+              <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Services</a></li>
+              <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">About</a></li>
+              <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300">Contact Us</a></li>
+            </ul>
+          </div>
+          <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+    
+            btn.addEventListener("click", () => {
+              menu.classList.toggle("hidden");
+            });
+          </script>
+        </nav>
+    </class>
+    
+    <!-- content -->
+   </div>
+  <class class="min-h-screen sm:flex sm:flex-row mx-0 justify-center">
+      <div class="flex-col flex  self-center p-10 sm:max-w-5xl xl:max-w-2xl  z-10">
+        <div class="self-start lg:flex flex-col  text-white">
+          <img src="" class="mb-3">
+          <h1 class="mb-3 font-bold text-5xl">Hi  Welcome StackPython </h1>
+          <p class="pr-3">Lorem ipsum is placeholder text commonly used in the graphic, print,
+            and publishing industries for previewing layouts and visual mockups</p>
+        </div>
+      </div>
+      <div class="flex justify-center self-center  z-10 p-8">
+        <div class="p-12 bg-white mx-auto rounded-2xl w-100 ">
+            <div class="mb-4">
+              <h3 class="font-semibold text-2xl text-gray-800">Sign In </h3>
+              <p class="text-gray-500">Please sign in to your account.</p>
+            </div>
+            <div class="space-y-5">
+                        <div class="space-y-2">
+                              <label class="text-sm font-medium text-gray-700 tracking-wide">Email</label>
+              <input class=" w-full text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400" type="" placeholder="mail@gmail.com">
+              </div>
+                          <div class="space-y-2">
+              <label class="mb-5 text-sm font-medium text-gray-700 tracking-wide">
+                Password
+              </label>
+              <input class="w-full content-center text-base px-4 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-green-400" type="" placeholder="Enter your password">
+            </div>
+              <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <input id="remember_me" name="remember_me" type="checkbox" class="h-4 w-4 bg-blue-500 focus:ring-blue-400 border-gray-300 rounded">
+                <label for="remember_me" class="ml-2 block text-sm text-gray-800">
+                  Remember me
+                </label>
+              </div>
+              <div class="text-sm">
+                <a href="#" class="text-green-400 hover:text-green-500">
+                  Forgot your password?
+                </a>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="w-full flex justify-center bg-yellow-400  hover:bg-yellow-500 text-gray-100 p-3  rounded-full tracking-wide font-semibold  shadow-lg cursor-pointer transition ease-in duration-500">
+                Sign in
+              </button>
+            </div>
+            </div>
+        </div>
+      </div>
+  </class>
+         
+<div class="bg-yellow-400">
+  <div>
+    <h1 class="text-center font-semibold text-white p-10 text-3xl"> Course StackPython</h1>
+  
+    
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+      <!--Card 1-->
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="w-24 h-24" src="https://cdn-icons-png.flaticon.com/512/5278/5278402.png" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="w-24 h-24" src="https://cdn-icons-png.flaticon.com/512/5278/5278402.png" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="w-24 h-24" src="https://cdn-icons-png.flaticon.com/512/5278/5278402.png" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  <div>
+    <h1 class="text-center font-semibold text-white p-10 text-3xl"> Instructor</h1>
+
+    
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+      <!--Card 1-->
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="rounded-full h-24 w-24 bg-blue-900" src="https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.15752-9/242602944_898688681059082_404893373741217992_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGLHuIruMgXGGqFA6GLsggFJHt58UObCoske3nxQ5sKi926eF4v4Gz9Q8kjHhjjeZo0B9_PmNmM6bq7YAOnPa4i&_nc_ohc=qLikIE9FmF0AX_BWIIb&_nc_ht=scontent.fbkk2-3.fna&oh=5ea46fb28e1916064e96a93b2a08bab9&oe=617854A2" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="rounded-full h-24 w-24 bg-blue-900" src="https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.15752-9/242602944_898688681059082_404893373741217992_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGLHuIruMgXGGqFA6GLsggFJHt58UObCoske3nxQ5sKi926eF4v4Gz9Q8kjHhjjeZo0B9_PmNmM6bq7YAOnPa4i&_nc_ohc=qLikIE9FmF0AX_BWIIb&_nc_ht=scontent.fbkk2-3.fna&oh=5ea46fb28e1916064e96a93b2a08bab9&oe=617854A2" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow-lg bg-white">
+      <div class="flex justify-center p-8"><img class="rounded-full h-24 w-24 bg-blue-900" src="https://scontent.fbkk2-3.fna.fbcdn.net/v/t1.15752-9/242602944_898688681059082_404893373741217992_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ae9488&_nc_eui2=AeGLHuIruMgXGGqFA6GLsggFJHt58UObCoske3nxQ5sKi926eF4v4Gz9Q8kjHhjjeZo0B9_PmNmM6bq7YAOnPa4i&_nc_ohc=qLikIE9FmF0AX_BWIIb&_nc_ht=scontent.fbkk2-3.fna&oh=5ea46fb28e1916064e96a93b2a08bab9&oe=617854A2" alt=""></div>
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-center">Deep Learning</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
+          </p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<section class="bg-white container mx-auto px-6 p-10">
+  <h2 class="text-4xl font-bold text-center text-gray-800 mb-8">
+    Benefits
+  </h2>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">
+        Programimg
+      </h4>
+      <p class="text-gray-600 mb-8">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa assumenda quasi aperiam tempora, 
+        voluptas eum in rem illum mollitia vero facere necessitatibus cupiditate dolores, sint obcaecati, 
+        sunt optio dolorum dignissimos.
+      </p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img
+        src="https://image.freepik.com/free-vector/code-typing-concept-illustration_114360-4296.jpg"
+        alt="1"
+      />
+    </div>
+  </div>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <img
+        src="https://image.freepik.com/free-vector/open-source-concept-illustration_114360-4298.jpg"
+        alt="2"
+      />
+    </div>
+    <div class="w-full md:w-1/2 pl-10 order-first md:order-last">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">
+        Developer
+      </h4>
+      <p class="text-gray-600 mb-8 ">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad, 
+        cumque deserunt nesciunt magni, voluptates voluptatum corporis dolorum adipisci 
+        suscipit odio vel mollitia nobis nisi in eius velit iusto aspernatur?
+      </p>
+    </div>
+  </div>
+  <div class="flex items-center flex-wrap mb-20">
+    <div class="w-full md:w-1/2">
+      <h4 class="text-3xl text-gray-800 font-bold mb-3">
+        Data Science
+      </h4>
+      <p class="text-gray-600 mb-8">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ad, 
+        cumque deserunt nesciunt magni, voluptates voluptatum corporis dolorum adipisci 
+        suscipit odio vel mollitia nobis nisi in eius velit iusto aspernatur?
+      </p>
+    </div>
+    <div class="w-full md:w-1/2">
+      <img
+        src="https://image.freepik.com/free-vector/code-review-concept-illustration_114360-4289.jpg"
+        alt="3"
+      />
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+ <footer class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-yellow-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <p class="mt-2 text-sm text-gray-500">Air plant banjo lyft occupy retro adaptogen indego</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">CATEGORIES</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
